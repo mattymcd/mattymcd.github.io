@@ -1,0 +1,60 @@
+
+html{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LaHmwTM1RFeFxqe-hvbgruau-deXriVtH9mXn80Dqe_j6ndEkw");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#left {
+	height: 300px;
+	width:45%;
+	border:solid black 1px;
+	float:left;
+	position:fixed;
+}
+
+#posts {
+	width: 45%;
+	float: right;
+}
+
+#footer {
+	position:fixed;
+	bottom: 0px;
+	height: 20px;
+}
+
+.blog-post {
+	border:solid;
+	background: #FFC469;
+}
+
+#profile-pic {
+	position:absolute;
+	margin: 20px 20px 20px 20px;
+	width: 40%;
+	border: blue solid;
+}
+
+#header {
+	position:fixed;
+}
+
+#profile-text {
+	float:right;
+	margin-right: 10%
+}
+
+h1 {
+  text-align: center;	
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+    text-align: center;		
+}
+
+
+
