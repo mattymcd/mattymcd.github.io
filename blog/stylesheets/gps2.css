@@ -1,0 +1,35 @@
+		html {
+		    text-align: center;
+		    color: white;
+		    background-color: #123456;
+		}
+		
+		#title-box {
+		    border: black solid 2px;
+		}    
+		
+		#box2 {
+		    border: blue solid 2px;
+		}
+		
+		#image {
+		    width: 30%;
+		}    
+		p {
+		    
+            font-family: 'Cantarell', sans-serif;
+		}
+		
+		#driver {
+		   
+		    display: inline-block;
+		    width: 30%;
+		    padding-left: 10%;
+		}
+		
+		#navigator {
+		   
+		    display: inline-block;
+		    width: 30%;
+		    padding-right: 10%;
+		}

@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Your page title here</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
-</head>
+  <head>
+    <link type="text/css" rel="stylesheet" href="t2-css-design.css"/>
+    <title>Styling</title>
+  </head>
+  <h1>CSS Positioning</h1>
+  <body>
+    <img src="img1.jpg">
+    <p>
+      All of these elements are in the default position, which is "static."  In other words, none of them have any positioning commands in CSS.
 
-<main>
-  <h1>Blog Template</h1>
-  <h2>Blog subtitle</h2>
-  <h4>Today's Date</h4>
+      Here is the HTML and CSS code used to create this page:
 
-  <div id="left">
-    <img id="profile-pic" src=https://en.gravatar.com/userimage/76680905/6a54126918df15e1c46e63e78a1d35ec.jpg?size=200 />
-    <ul id="profile-text">
-      <li>Name: Johnny Rocket</li>
-      <li>Age: 25</li>
-    </ul>
-  </div>
-
-  <section id="posts">
-    <p class="blog-post"> 
-      <b>Date Blog post 1</b> Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+      HTML:
+<pre>
+      <!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="styling.css"/>
+    <title>Styling</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">header</div>
+      <div id="parent"> parent
+        <div id ="child1">
+        Child1: Happy families are all alike; every unhappy family is unhappy in its own way.
+        <br>
+        <br>
+        </div>          
+        <div id ="child2">
+        Child2: Kamal is out with twenty men to raise the Border side,<br>
+        And he has lifted the Colonel's mare that is the Colonel's pride:<br>
+        He has lifted her out of the stable-door between the dawn and the day,<br>
+        And turned the calkins upon her feet, and ridden her far away.<br>          
+        <br>
+        </div>
+        <div id ="child3">
+        Child3: And this is how I see the East. I have seen its secret places and have looked into its very soul; but now I see it always from a small boat, a high outline of mountains, blue and afar in the morning; like faint mist at noon; a jagged wall of purple at sunset.
+        <br>
+        <br>
+        </div>
+      </div>
+      <div id="footer">footer</div>
+    </div>
+  </body>
+</html>
+</pre>
     </p>
-    <p class="blog-post">
-        <b>Date Blog post 2</b> Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
-    </p>
-    <p class="blog-post">
-        <b>Date Blog post 3</b> Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-    </p>
-    <p class="blog-post">
-        <b>Date Blog post 4</b> Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-    </p>
-    <p class="blog-post">
-        <b>Date Blog post 5</b> Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-    </p>
-      <!-- copy and paste as many sections as you want to add paragraphs -->
-  </section>
-</main>
+  </body>
 </html>
