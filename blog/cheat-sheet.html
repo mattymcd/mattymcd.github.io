@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="cheat-sheet.css"/>
+    <title>Cheat_Sheet</title>
+  </head>
+  <h1>CSS Cheat Sheet</h1>
+  <body>
+    <div>
+    CSS CHEAT SHEET:
+    </div>
+
+    <div>
+    SYNTAX
+    </div>
+
+    <div>
+
+    COMMENTS IN CSS:
+    /* */
+    example:/*comment text here*/
+    </div>
+
+    <div>
+
+    RELATIVE FONT SIZE:
+    use ems (em) instead of pixels (px)
+    example: &ltp&gt style="font-size: 1em">One em!&lt/p&gt
+
+    </div>
+
+CSS FONT BACKUP VALUES:
+font-family: Tahoma, Verdana, Sans-serif;
+note: verdana, sans-serif are backups if Tahoma isn't on computer
+
+CSS CASCADING, OR SELECTING NESTED ELEMENTS:
+So what if you want to grab <p>s that are inside 
+two <div>s, and not all <p>s?
+
+in CSS, type the following:
+
+div div p {
+    property: value;
+}
+
+you can also use:
+
+div > p { 
+    property: value;
+}
+
+This only grabs <p>s that are nested directly inside of <div>s;
+it won't grab any paragraphs that are, say, nested inside lists
+that are in turn nested inside <div>s.
+
+
+CSS CLASSES
+
+note: more specific code later down the CSS will override previous, more
+generic code.  Example:
+
+p { font-family: Garamond;}
+will be overridden by
+li p { font-family: Vivaldi}
+
+Classes are assigned to HTML elements with the word class 
+and an equals sign, like so:
+
+<div class="square"></div>
+<img class="square"/>
+<td class="square"></td>
+
+Classes are identified in CSS with a dot (.), like so:
+
+.square {
+    height: 100px;
+    width: 100px;
+}
+
+CSS IDs
+
+IDs, on the other hand, are great for when you have 
+exactly one element that should receive a certain kind of styling.
+
+IDs are assigned to HTML elements with the word id and an equals sign:
+
+<div id="first"></div>
+<div id="second"></div>
+<p id="intro"></p>
+
+IDs are identified in CSS with a pound sign (#):
+
+#first {
+    height: 50px;
+}
+
+#second {
+    height: 100px;
+
+
+CSS PSEUDO-CLASS SELECTORS
+
+syntax:
+
+selector:pseudo-class_selector {
+    property: value;
+}
+
+example:
+
+a:hover {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+
+this makes it so when you hover your mouse over any link (a),
+it turns red and bold
+
+a:link: An unvisited link.
+a:visited: A visited link.
+a:hover: A link you're hovering your mouse over.
+
+
+first-child
+
+p:first-child { property: value;}
+
+you can also use "nth-child"
+
+p:nth-child(2) {
+    color: red;
+}
+Would turn every paragraph that is the second child of its parent element red.
+
+
+CSS BORDER COMMAND WITH MULTIPLE VALUES:
+border: 1px solid black;
+note: you don't need to put , in between them
+
+CSS TEXT-DECORATION: NONE
+note: this removes formatting like the underline and blue on links
+
+CSS TERMS:
+MARGIN - space between element and other elements
+BORDER
+PADDING -space between content and border
+CONTENT - text or image
+
+TM - "top margin"
+BP - "bottom padding"
+LB - "left border"
+etc.
+
+CSS MARGIN PROPERTIES
+margin: auto
+note: this centers the object on the page
+
+margin-top: /*some value*/
+margin-right: /*some value*/
+margin-bottom: /*some value*/
+margin-left: /*some-value*/
+
+You can also set an element's margins all at once: 
+you just start from the top margin and go around clockwise 
+(going from top to right to bottom to left). For instance:
+
+margin: 1px 2px 3px 4px;
+
+will set a top margin of 1 pixel, a right margin of 2, a bottom of 3, 
+and a left of 4.
+
+format: margin: top right bottom left;
+
+PADDING:
+padding-top: /*some value*/
+padding-right: /*some value*/
+padding-bottom: /*some value*/
+padding-left: /*some-value*/
+
+or "padding: top right bottom left;
+
+NEGATIVE MARGINS:
+If you want to move an element in the other direction, 
+you can give CSS a negative value: margin-left: -20px will 
+move the element twenty pixels to the left.
+
+CSS WILDCARD or "UNIVERSAL SELECTOR"
+if you put "*" before the {, it will apply the property to all selectors
+
+
+CSS FLOAT
+pushes element to the right or left
+
+CSS CLEAR
+clear: right - will move below floating elements on the right
+clear: left - will move below floating elements on the left
+clear: both - will avoid left and right
+
+CSS CENTERING
+
+one way to do this is making the left and right margins "auto"
+
+p {
+margin-left: auto;
+margin-right: auto;
+}
+
+CSS POSITION STATIC
+default setting
+
+CSS POSITION: ABSOLUTE
+positions element relative to the first parent element that doesn't have
+static position
+
+CSS POSITION: RELATIVE
+tells the element to move relative to where it would have landed if 
+it just had the default static positioning.
+
+CSS POSITION: FIXED
+fixed positioning anchors an element to the browser window—
+you can think of it as gluing the element to the screen. 
+If you scroll up and down, the fixed element stays put even 
+as other elements scroll past.
+
+
+events
+a click is an event
+load is an event (when a site finishes loading)
+
+properties
+widths, colors etc of objects
+
+methods
+methods change the properties of an object when an event happens
+
+CSS STYLING:
+border-radius: #px - this makes your buttons or elements have rounded corners
+
+
+  </body>
+</html>
